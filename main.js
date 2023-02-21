@@ -1,6 +1,3 @@
-
-
-
 // MY SERVER
 Moralis.initialize("wg2BC0oEP71yh60ZNBi9Vrqb0TLbXBVhj3cQjaou");
 Moralis.serverURL = "https://a5dkabrhtj8t.bigmoralis.com:2053/server";
@@ -8,18 +5,11 @@ Moralis.serverURL = "https://a5dkabrhtj8t.bigmoralis.com:2053/server";
 let homepage = "http://127.0.0.1:5504/index.html";
 let dashboard = "http://127.0.0.1:5504/dashboard.html";
 
-
-
-
 // REDIRECT USER BASED ON STATUS
 if (Moralis.User.current() == null && window.location.href != homepage) {
     document.querySelector('body').style.display = 'none';
     window.location.href = "index.html";
-
 }
-
-
-
 
 //HELPER FUNCTIONS
 login = async () => {
@@ -429,20 +419,6 @@ if (window.location.href == homepage) {
     document.querySelector('#btn-login').onclick = login;
 
 }
-
-
-
-
-//TEST
-
-/* const gjhghj = { chain: "bsc", symbols: "LINK" };
-const gjghjghjghj = await Moralis.Web3API.token.getTokenMetadataBySymbol(options);
-console.log(gjghjghjghj); */
-
-
-
-
-
 
 
 //Addres
